@@ -9,29 +9,28 @@ class CustomUserAdmin(UserAdmin):
     search_fields = ('username', 'email')
     ordering = ('username',)
 
-# ✅ Personnalisation du modèle ApprenantProfile
+    fieldsets = UserAdmin.fieldsets + (
+        ("Rôle utilisateur", {'fields': ('role',)}),
+    )
+
+# ✅ (le reste inchangé)
 class ApprenantProfileAdmin(admin.ModelAdmin):
     list_display = ('user', 'referentiel', 'numero_telephone')
     search_fields = ('user__username', 'referentiel', 'numero_telephone')
     list_filter = ('referentiel',)
-    
-    # Permet d'éditer directement les champs liés
     raw_id_fields = ('user',)
 
-# ✅ Personnalisation du modèle Ordinateur
 class OrdinateurAdmin(admin.ModelAdmin):
     list_display = ('marque', 'modele', 'adresse_mac', 'etat', 'apprenant')
     list_filter = ('etat', 'marque')
     search_fields = ('marque', 'modele', 'adresse_mac')
     ordering = ('marque',)
 
-# ✅ Personnalisation du modèle ReportIssue
 class ReportIssueAdmin(admin.ModelAdmin):
     list_display = ('type_probleme', 'apprenant', 'ordinateur', 'date_signalement')
     list_filter = ('type_probleme', 'date_signalement')
     search_fields = ('apprenant__username', 'ordinateur__adresse_mac')
 
-# ✅ Enregistrement des modèles avec leurs classes personnalisées
 admin.site.register(User, CustomUserAdmin)
 admin.site.register(ApprenantProfile, ApprenantProfileAdmin)
 admin.site.register(Ordinateur, OrdinateurAdmin)

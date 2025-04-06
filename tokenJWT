@@ -1,0 +1,17 @@
+ testuser
+ testpassword
+
+ {
+    "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc0NDAzOTI5OCwiaWF0IjoxNzQzOTUyODk4LCJqdGkiOiJkNzM4ODU4NGQzYTU0ZGEyYWE5ZGMxZTRkZTIwZjRlNCIsInVzZXJfaWQiOjJ9.kWYGGlJA9DadUNJBYnSfayF7AqEHCpTdtP_xbDw98iQ",
+    "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQzOTU2NDk4LCJpYXQiOjE3NDM5NTI4OTgsImp0aSI6ImY5YzE5OTU3ZTM1ODQzNzk5NDRkNjZmYTcwNTVmMjU0IiwidXNlcl9pZCI6Mn0.IMZ7tU-64buGdA0mYYkH5bN8NGitQOjF8JcrmYCIsv8"
+}
+
+
+{
+  "username": "apprenant1",
+  "password": "bonjourbonjour"
+}
+{
+    "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc0NDA0MTA4NCwiaWF0IjoxNzQzOTU0Njg0LCJqdGkiOiI1NTY5Yzk3MWRkYmE0NThhYmUwMWY4ZTFlMGQwMjk3ZiIsInVzZXJfaWQiOjN9.KjsUDsVx6uOASPkevmtRgJHytmGYwRT7zHkN8onVtTE",
+    "access": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzQzOTU4Mjg0LCJpYXQiOjE3NDM5NTQ2ODQsImp0aSI6IjA4MGEyYWIwNDBlYjRmZDBhNmU2MTZhYTgzODI0MjlkIiwidXNlcl9pZCI6M30.PkY00FgCVbrrn65LkiybNXfpbvVbq1GtFWuhnSEcE1w"
+}
