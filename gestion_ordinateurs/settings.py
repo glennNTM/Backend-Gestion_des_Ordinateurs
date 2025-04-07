@@ -40,7 +40,17 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework_simplejwt',
     'drf_yasg',
+    'corsheaders',
     'core',
+]
+
+MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
+    ...
+]
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",  
 ]
 
 REST_FRAMEWORK = {
