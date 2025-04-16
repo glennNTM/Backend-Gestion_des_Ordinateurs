@@ -27,8 +27,7 @@ DEBUG = True
 
 import os
 
-ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "localhost").split(",")
-
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -45,12 +44,6 @@ INSTALLED_APPS = [
     'drf_yasg',
     'corsheaders',
     'core',
-]
-
-MIDDLEWARE = [    'drf_yasg',
-
-    'corsheaders.middleware.CorsMiddleware',
-    ...
 ]
 
 CORS_ALLOWED_ORIGINS = [
@@ -79,6 +72,7 @@ AUTH_USER_MODEL = 'core.User'
 
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
