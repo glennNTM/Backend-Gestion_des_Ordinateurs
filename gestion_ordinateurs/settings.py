@@ -25,11 +25,10 @@ SECRET_KEY = 'django-insecure-pti1-3se&c59$_j^bz68drr%#^^+8$q+720@9u6g2x-&78^(ew
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    'django-rest-api-latest.onrender.com',
-    'localhost',
-    '127.0.0.1'
-]
+import os
+
+ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "localhost").split(",")
+
 
 
 # Application definition
