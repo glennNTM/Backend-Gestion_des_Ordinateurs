@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  web:
+    build: .
+    container_name: django-sqlite-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app         # Montre ton projet dans le conteneur
+      - ./db.sqlite3:/app/db.sqlite3  # Persiste la DB SQLite sur l’hôte
+    env_file:
+      - .env           # Optionnel si tu utilises des variables d'environnement

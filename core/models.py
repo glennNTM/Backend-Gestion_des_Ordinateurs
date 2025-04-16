@@ -39,10 +39,14 @@ class ApprenantProfile(models.Model):
         on_delete=models.CASCADE,
         related_name='apprenant_profile'
     )
-    date_naissance = models.DateField()
-    adresse = models.CharField(max_length=100, default='Adresse inconnue')
-    referentiel = models.CharField(max_length=100, choices=REFERENTIEL_CHOICES, default='DEV_WEB')
-    numero_telephone = models.CharField(max_length=9, unique=True, validators=[phone_validator])
+    nom = models.CharField(max_length=100, default='Inconnu', blank=False)
+    prenom = models.CharField(max_length=100, default='Inconnu', blank=False)
+    sexe = models.CharField(max_length=10, choices=[('H', 'Homme'), ('F', 'Femme')], default='H', blank=False)
+    date_naissance = models.DateField(blank=False)
+    adresse = models.CharField(max_length=100, default='Adresse inconnue', blank=False)
+    referentiel = models.CharField(max_length=100, choices=REFERENTIEL_CHOICES, default='Développeur Web', blank=False)
+    email = models.EmailField(unique=True, blank=False, default='utilisateur_inconnu@example.com')
+    numero_telephone = models.CharField(max_length=9, unique=True, validators=[phone_validator], blank=False)
 
     def __str__(self):
         return f"Profil de {self.user.username}"
@@ -58,13 +62,17 @@ class Ordinateur(models.Model):
         ('majeur', 'Problème majeur'),
     ]
 
-    marque = models.CharField(max_length=100, default='Inconnu')
-    modele = models.CharField(max_length=100, default='Inconnu')
-    processeur = models.CharField(max_length=100, default='Inconnu')
-    ram = models.CharField(max_length=100, default='8GB')
-    stockage = models.CharField(max_length=100, default='256GB')
-    adresse_mac = models.CharField(max_length=100, unique=True, default='00:00:00:00:00:00')
-    etat = models.CharField(max_length=10, choices=ETAT_CHOICES, default='bon')
+    marque = models.CharField(max_length=100, default='Inconnu', blank=False)
+    modele = models.CharField(max_length=100, default='Inconnu', blank=False)
+    serie  = models.CharField(max_length=100, default='Inconnu', blank=False)
+    generation_serie = models.CharField(max_length=100, default='Inconnu', blank=False)
+    processeur = models.CharField(max_length=100, default='Inconnu', blank=False)
+    generation_cpu = models.CharField(max_length=100, default='Inconnu', blank=False)
+    ram = models.CharField(max_length=100, default='8GB', blank=False)
+    stockage = models.CharField(max_length=100, default='256GB', blank=False)
+    numero_serie = models.CharField(max_length=100, default='Inconnu', blank=False)
+    adresse_mac = models.CharField(max_length=100, default='00:00:00:00:00:00', blank=False, unique=True)
+    etat = models.CharField(max_length=10, choices=ETAT_CHOICES, default='bon', blank=False)
 
     # Lien avec l'utilisateur apprenant
     apprenant = models.ForeignKey(
