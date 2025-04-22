@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="288bd391-f309-4671-8e9a-9a44b3fd3ce0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/core/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gestion_ordinateurs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gestion_ordinateurs.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gestion_ordinateurs/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestion_ordinateurs/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gestion_ordinateurs/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/gestion_ordinateurs/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,8 +75,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-PY-243.26053.29" />
-        <option value="bundled-python-sdk-b1dbf8ef85a6-4df51de95216-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-243.26053.29" />
+        <option value="bundled-python-sdk-348a24fa61fa-5312c7369657-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-251.23774.444" />
       </set>
     </attachedChunks>
   </component>
@@ -95,6 +96,11 @@
       <workItem from="1744459463042" duration="15000" />
       <workItem from="1744759291781" duration="1869000" />
       <workItem from="1744761177075" duration="3149000" />
+      <workItem from="1744792204010" duration="6394000" />
+      <workItem from="1745042864518" duration="62000" />
+      <workItem from="1745060844452" duration="2134000" />
+      <workItem from="1745302843039" duration="20000" />
+      <workItem from="1745302911487" duration="34000" />
     </task>
     <servers />
   </component>
