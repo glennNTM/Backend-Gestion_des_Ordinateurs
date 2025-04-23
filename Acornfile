@@ -1,0 +1,14 @@
+# Acornfile
+
+containers:
+  web:
+    build: .
+    ports: ["8000:8000"]
+    env:
+      - DJANGO_SETTINGS_MODULE=myapi.settings
+    volumes:
+      - name: db-volume
+        path: /app/db.sqlite3
+
+volumes:
+  db-volume: {}
